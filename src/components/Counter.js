@@ -7,6 +7,7 @@ const Counter = () => {
             <h4>{count}</h4>
             <button onClick={()=>setCount(count+1)}>Increment</button>
             <button style={{marginLeft:"10px"}} onClick={()=>count>0 ?setCount(count-1):0 }> Decrement</button>
+            <button style={{marginLeft:"10px"}} onClick={()=>setCount(0)}>Reset</button>
         </div>
     )
 }
